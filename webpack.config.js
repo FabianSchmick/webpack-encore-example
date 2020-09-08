@@ -28,11 +28,7 @@ Encore
         from: config.copy.from,
         to: config.copy.to
     })
-    .splitEntryChunks()
-    .enableSingleRuntimeChunk()
-    .configureSplitChunks(splitChunks => {
-        splitChunks.minSize = 0;
-    })
+    .disableSingleRuntimeChunk()
     .configureBabel(() => {}, {
         useBuiltIns: 'usage',
         corejs: 3,
