@@ -1,0 +1,40 @@
+{
+  "outputPath": "./public/assets",
+  "publicPath": "/assets",
+  "swDest": "../sw.js",
+
+  "styles": {
+    "frontend": {
+      "src": [
+        "./assets/sass/frontend.sass"
+      ],
+      "dest": "css/app"
+    },
+    "admin": {
+      "src": [
+        "./assets/sass/admin.sass"
+      ],
+      "dest": "css/admin"
+    }
+  },
+
+  "scripts": {
+    "frontend": {
+      "src": [
+        "./assets/js/frontend.js"
+      ],
+      "dest": "js/app"
+    },
+    "admin": {
+      "src": [
+        "./assets/js/admin.js"
+      ],
+      "dest": "js/admin"
+    }
+  },
+
+  "copy": {
+    "from": "./assets/images",
+    "to": "images/[path][name].[hash:8].[ext]"
+  }
+}
